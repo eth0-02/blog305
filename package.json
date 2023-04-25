@@ -28,6 +28,7 @@
 	"dependencies": {
 		"@sanity/client": "^4.0.0",
 		"@sanity/image-url": "^1.0.1",
+		"@tinacms/cli": "^1.5.6",
 		"highlight.js": "^11.7.0",
 		"marked": "^4.2.12",
 		"nprogress": "^0.2.0",
@@ -35,6 +36,7 @@
 		"svelte-lazy-image": "^0.5.1",
 		"svelte-loading-skeleton": "^1.0.1",
 		"svelte-locomotive-scroll": "^0.0.5",
-		"svelte-preprocess": "^5.0.0"
+		"svelte-preprocess": "^5.0.0",
+		"tinacms": "^1.4.6"
 	}
 }
