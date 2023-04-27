@@ -1,8 +1,19 @@
-import { sveltekit } from '@sveltejs/kit/vite'
+import preprocessor from 'svelte-preprocess';
+import adapter from '@sveltejs/adapter-netlify';
 
-/** @type {import('vite').UserConfig} */
 const config = {
-	plugins: [sveltekit()],
-}
+	preprocess: preprocessor({
+		scss: {
+			prependData: `@use './src/styles/variables.scss' as *;`
+		}
+	}),
+	kit: {
+		adapter: adapter({
+			edge: false,
+			split: false,
+			compress: true
+		})
+	}
+};
 
-export default config
+export default config;
